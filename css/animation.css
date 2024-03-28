@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* ---------------------------Background Color---------------- */
+    --primary-bg-color: #0d1525;
+    --primary-color: #FD4766;
+    --secoundary-color: #0e1525;
+    --bg-dark-blue: #091020;
+    --bg-white: #fff;
+    --gray-color: #c6c9d8bf;
+    --gradient-color: linear-gradient(-224deg,var(var(--primary-color) 0, #337DFF 100%));
+    --gradient-text: linear-gradient(120deg,#1C99FC 20.69%, #7644FF 50.19%, var(var(--primary-color) 79.69%)):
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-color)', endColorstr='var (--secondary-color)', GradientType=1);
+
+    /* ---------------------------Text Color---------------- */
+    --primary-font:'poppins, sans-serif';
+    --primary-text: #FD4766;
+    --text-gray: #c6c9d8bf;
+    --text-white: #fff;
+}
+.home-content .text-animate h3{
+    animation: homeBgText 6s linear infinite;
+    transition: 1s ease-in-out;
+} 
+@keyframes homeBgText {
+    0%,10%,100%{
+        background-position: -33rem 0;
+    }
+    65%,85%{
+        background-position: 0 0;
+    }
+}
+.circle-spin {
+animation: aboutSpinner 8s linear infinite;
+}
+@keyframes aboutSpinner{
+
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.about-bar .about-bar .bhc-msc{
+    width: 76%;
+    animation: vsb 2s;
+}
+.about-bar .about-bar .bhc-bsc{
+    width: 64%;
+    animation: vsb 2s;
+}
+.about-bar .about-bar .hsc{
+    width: 64%;
+    animation: hsc 3s;
+}
+.about-bar .about-bar .ssc{
+    width: 76%;
+    animation: ssc 4s;
+}
+@keyframes bhc-msc{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 76.78%;
+    }
+}
+@keyframes bhc-bsc{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 64%;
+    }
+}
+@keyframes hsc{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 64%;
+    }
+}
+@keyframes ssc{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 76%;
+    }
+}
+.skill-bar .bar .html{
+    width: 95%;
+    animation: html 2s;
+}
+.skill-bar .bar .css{
+    width: 85%;
+    animation: css 3s;
+}
+.skill-bar .bar .JavaScript{
+    width: 75%;
+    animation: javascript 4s;
+}
+.skill-bar .bar .Bootstrap{
+    width: 80%;
+    animation: bootstrap 4s;
+}
+.skill-bar .bar .Python{
+    width: 70%;
+    animation: python 4s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes glow{
+    0%{
+        background: #250821;
+        box-shadow: none;
+    }
+    100%{
+        background: var(--primary-color);
+        box-shadow: 0 0 .5rem var(--primary-color);
+    }
+}
+.points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
