@@ -179,7 +179,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
 .heroContainer{
     padding: 150px 0 0;
@@ -268,6 +267,7 @@ header{
     /* width: 26rem; */
     height: 4rem;
     /* color: var(--text-color) !important; */
+    margin-bottom: 80px;
 }
 .btn-box .btn {
     position: relative;
