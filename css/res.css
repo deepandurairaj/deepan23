@@ -1,1 +1,176 @@
+@media(max-width:1200px){
+       /* home */
+       .home{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-md-img.jpg") no-repeat fixed;
+        /* background-size: cover; */
+        background-size: contain;
+        background-position: right top;
+        /* height: 60vh; */
+    }
 
+    .btn-box {
+        width: 60%;
+        margin-top: 50px;
+    }
+}
+@media(max-width:991px)
+{
+    /* header */
+    .header{
+        background-color: var(--primary-bg-color);
+    }
+    .navbar-nav .nav-item .nav-link:hover,.navbar-nav .nav-item a.active{
+        width: 12%;
+    }
+    .nav-btn{
+        display: flex !important;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 13px !important;
+    }
+    .navbar-nav{
+        gap: 0 !important;
+    }
+    /* footer */
+    .main-footer .copyright-text p{
+        margin-top: 0;
+    }
+    .footer-logo p{
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+      /* home */
+      .home{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-md-img.jpg") no-repeat fixed;
+        /* background-size: cover; */
+        background-size: cover;
+        background-position: right top;
+        /* height: 90vh; */
+    }
+
+    .btn-box {
+        width: 80%;
+        margin-top: 50px;
+    }
+    /* header */
+    .navbar-nav .nav-item .nav-link:hover,.navbar-nav .nav-item a.active{
+        width: 15%;
+    }
+    .home-content{
+        width: 100%;
+    }
+     .home-content .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .dynamic-txts li span{
+        font-size: 40px;
+    }
+
+    /* About Section */
+    .about-info-div{
+        padding-top: 30px;
+    }
+    .about-bar-set{
+        margin: 20px 0;
+    }
+    .about-main{
+        margin-top: 20px;
+    }
+    .about-edt{
+        font-size: 30px;
+    }
+    .footer-logo p {
+        
+        margin-top: 0 !important;
+    }
+    .navbar-nav .nav-item .nav-link:hover,.navbar-nav .nav-item a.active{
+        width: 17%;
+    }
+}
+@media(max-width:450px){
+
+      /* home */
+      .home{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-md-img.jpg") no-repeat fixed;
+        /* background-size: cover; */
+        background-size: cover;
+        background-position: right top;
+        /* height: 80vh; */
+    }
+
+    /* .btn-box {
+        width: 100%;
+        margin-top: 50px;
+    } */
+    .wrapper .static-txt {
+        color: #fff;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 800;
+    }
+    .dynamic-txts li span{
+        font-size: 35px;
+    }
+    /* .btn-box{
+        width: 90%;
+    } */
+    .dynamic-txts li span{
+        font-size: 30px;
+    }
+    .wrapper .static-txt {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .btn-box {
+        width: 80%;
+        height: 3.5rem;
+    }
+    .btn-box .btn {
+        height: 80%;
+        width: 7rem;
+        font-size: 12px;
+    }
+    .about-img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .circle-spin {
+        border-top: .2rem solid var(--primary-bg-color);
+        border-bottom: .2rem solid var(--primary-bg-color);
+        border-left: .2rem solid var(--primary-color);
+        border-right: .2rem solid var(--primary-color);
+        box-shadow: 3px 3px 50px rgb(42, 211, 241),5px 5px 10px rgb(240, 234, 240);
+    }
+    .dynamic-txts li span{
+        font-size: 25px;
+    }
+    .about-img {
+        width: 20rem;
+        height: 20rem;
+    }
+    .circle-spin {
+        border-top: .2rem solid var(--primary-bg-color);
+        border-bottom: .2rem solid var(--primary-bg-color);
+        border-left: .2rem solid var(--primary-color);
+        border-right: .2rem solid var(--primary-color);
+        box-shadow: 3px 3px 50px rgb(42, 211, 241),5px 5px 10px rgb(240, 234, 240);
+    }
+    .home-content h1{
+        font-size: 10px !important; 
+        width: 10px;
+        height: 10px;
+    }
+    .home{
+        padding-top: 10px;
+    }
+}
