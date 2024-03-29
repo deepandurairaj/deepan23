@@ -1,56 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root{
-     /* ---------------------------Background Color---------------- */
-     --primary-bg-color: #0d1525;
-     --primary-color: #FD4766;
-     --secoundary-color: #0e1525;
-     --bg-dark-blue: #091020;
-     --bg-white: #fff;
-     --gray-color: #c6c9d8bf;
-     --gradient-color: linear-gradient(-224deg,var(var(--primary-color) 0, #337DFF 100%));
-     --gradient-text: linear-gradient(120deg,#1C99FC 20.69%, #7644FF 50.19%, var(var(--primary-color) 79.69%)):
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-color)', endColorstr='var (--secondary-color)', GradientType=1);
- 
-     /* ---------------------------Text Color---------------- */
-     --primary-font:'poppins, sans-serif';
-     --primary-text: #FD4766;
-     --text-gray: #c6c9d8bf;
-     --text-white: #fff;
-}
-@media(max-width:375px){
-    .home-content h1{
-        font-size: 10px !important; 
-        width: 10px;
-        height: 10px;
-    }
-    .home{
-        padding-top: 10px;
-    }
-}
-
-/* @media(max-width:1200px){
-    .home{
+@media(max-width:1200px){
+       /* home */
+       .home{
         width: 100%;
-        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-lg-img.jpg") no-repeat center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: right;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-md-img.jpg") no-repeat fixed;
+        /* background-size: cover; */
+        background-size: contain;
+        background-position: right top;
+        height: 60vh;
+    }
 
+    .btn-box {
+        width: 60%;
+        margin-top: 50px;
     }
-} */
-/* @media(max-width:480px){
-    .home{
-        background-position-x: -1250px;
-        background-size: cover;
-    }
-} */
-@media(max-width:993px)
+}
+@media(max-width:991px)
 {
     /* header */
     .header{
@@ -68,21 +32,6 @@
     .navbar-nav{
         gap: 0 !important;
     }
-
-    /* home */
-    .home{
-        width: 100%;
-        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-md-img.jpg");
-        background-position: center center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    .btn-box {
-        width: 60%;
-    }
-
     /* footer */
     .main-footer .copyright-text p{
         margin-top: 0;
@@ -91,9 +40,21 @@
         text-align: center;
     }
 }
-
 @media(max-width:768px){
+      /* home */
+      .home{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-md-img.jpg") no-repeat fixed;
+        /* background-size: cover; */
+        background-size: cover;
+        background-position: right top;
+        height: 90vh;
+    }
 
+    .btn-box {
+        width: 80%;
+        margin-top: 50px;
+    }
     /* header */
     .navbar-nav .nav-item .nav-link:hover,.navbar-nav .nav-item a.active{
         width: 15%;
@@ -108,19 +69,6 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
-
-    /* home */
-    .home{
-        width: 100%;
-        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-smd-img.jpg");
-        background-position: center center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .btn-box{
-        width: 80%;
     }
     .dynamic-txts li span{
         font-size: 40px;
@@ -143,41 +91,26 @@
         
         margin-top: 0 !important;
     }
-}
-
-@media(max-width:576px){
-    /* header */
     .navbar-nav .nav-item .nav-link:hover,.navbar-nav .nav-item a.active{
         width: 17%;
     }
-
-    /* Hero Section */
-    .home{
-        width: 100%;
-        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-sm-img.jpg") no-repeat center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-   
 }
-
-@media(max-width:480px){
-    .about-img {
-        width: 20rem;
-        height: 20rem;
-    }
-    .circle-spin {
-        border-top: .2rem solid var(--primary-bg-color);
-        border-bottom: .2rem solid var(--primary-bg-color);
-        border-left: .2rem solid var(--primary-color);
-        border-right: .2rem solid var(--primary-color);
-        box-shadow: 3px 3px 50px rgb(42, 211, 241),5px 5px 10px rgb(240, 234, 240);
-    }
-}
-
-
 @media(max-width:450px){
 
+      /* home */
+      .home{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/bg-md-img.jpg") no-repeat fixed;
+        /* background-size: cover; */
+        background-size: cover;
+        background-position: right top;
+        height: 80vh;
+    }
+
+    /* .btn-box {
+        width: 100%;
+        margin-top: 50px;
+    } */
     .wrapper .static-txt {
         color: #fff;
         font-weight: 400;
@@ -188,12 +121,9 @@
     .dynamic-txts li span{
         font-size: 35px;
     }
-    .btn-box{
+    /* .btn-box{
         width: 90%;
-    }
-}
-
-@media(max-width:397px){
+    } */
     .dynamic-txts li span{
         font-size: 30px;
     }
@@ -221,9 +151,26 @@
         border-right: .2rem solid var(--primary-color);
         box-shadow: 3px 3px 50px rgb(42, 211, 241),5px 5px 10px rgb(240, 234, 240);
     }
-}
-@media(max-width:344px){
     .dynamic-txts li span{
         font-size: 25px;
+    }
+    .about-img {
+        width: 20rem;
+        height: 20rem;
+    }
+    .circle-spin {
+        border-top: .2rem solid var(--primary-bg-color);
+        border-bottom: .2rem solid var(--primary-bg-color);
+        border-left: .2rem solid var(--primary-color);
+        border-right: .2rem solid var(--primary-color);
+        box-shadow: 3px 3px 50px rgb(42, 211, 241),5px 5px 10px rgb(240, 234, 240);
+    }
+    .home-content h1{
+        font-size: 10px !important; 
+        width: 10px;
+        height: 10px;
+    }
+    .home{
+        padding-top: 10px;
     }
 }
